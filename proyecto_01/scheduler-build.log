@@ -1,0 +1,223 @@
+--progress is a global compose flag, better use `docker compose --progress xx build ...
+ Image proyecto_01-airflow-scheduler Building 
+ Image proyecto_01-airflow-init Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.30kB done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 291B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for ghcr.io/astral-sh/uv:latest
+#3 DONE 0.6s
+
+#4 [internal] load metadata for docker.io/apache/airflow:2.10.5-python3.10
+#4 DONE 0.6s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [stage-0 1/4] FROM docker.io/apache/airflow:2.10.5-python3.10@sha256:04dfd8de3539a1265eb4ca4446982670ea0274cadf60d1edef2e62263c7b9ba0
+#6 resolve docker.io/apache/airflow:2.10.5-python3.10@sha256:04dfd8de3539a1265eb4ca4446982670ea0274cadf60d1edef2e62263c7b9ba0 0.0s done
+#6 CACHED
+
+#7 FROM ghcr.io/astral-sh/uv:latest@sha256:538e0b39736e7feae937a65983e49d2ab75e1559d35041f9878b7b7e51de91e4
+#7 resolve ghcr.io/astral-sh/uv:latest@sha256:538e0b39736e7feae937a65983e49d2ab75e1559d35041f9878b7b7e51de91e4 0.0s done
+#7 CACHED
+
+#8 [internal] load build context
+#8 transferring context: 38B done
+#8 DONE 0.0s
+
+#9 [stage-0 2/4] COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
+#9 DONE 0.2s
+
+#10 [stage-0 3/4] COPY requirements.txt /requirements.txt
+#10 DONE 0.1s
+
+#11 [stage-0 4/4] RUN uv pip install --system --no-cache -r /requirements.txt
+#11 1.185 Using Python 3.10.16 environment at: /usr/local
+#11 3.884 Resolved 161 packages in 2.69s
+#11 7.598 Prepared 161 packages in 3.70s
+#11 100.3 Installed 161 packages in 231ms
+#11 100.3  + a2wsgi==1.10.10
+#11 100.3  + aiosmtplib==5.1.0
+#11 100.3  + aiosqlite==0.22.1
+#11 100.3  + alembic==1.18.3
+#11 100.3  + annotated-doc==0.0.4
+#11 100.3  + annotated-types==0.7.0
+#11 100.3  + anyio==4.12.1
+#11 100.3  + apache-airflow==3.0.6
+#11 100.3  + apache-airflow-core==3.0.6
+#11 100.3  + apache-airflow-providers-common-compat==1.13.0
+#11 100.3  + apache-airflow-providers-common-io==1.7.1
+#11 100.3  + apache-airflow-providers-common-sql==1.30.4
+#11 100.3  + apache-airflow-providers-postgres==5.10.0
+#11 100.3  + apache-airflow-providers-smtp==2.4.2
+#11 100.3  + apache-airflow-providers-standard==1.11.0
+#11 100.3  + apache-airflow-task-sdk==1.0.6
+#11 100.3  + argcomplete==3.6.3
+#11 100.3  + asgiref==3.11.1
+#11 100.3  + attrs==25.4.0
+#11 100.3  + backports-strenum==1.3.1
+#11 100.3  + blinker==1.9.0
+#11 100.3  + cadwyn==6.0.1
+#11 100.3  + certifi==2026.1.4
+#11 100.3  + cffi==2.0.0
+#11 100.3  + charset-normalizer==3.4.4
+#11 100.3  + click==8.3.1
+#11 100.3  + cloudpickle==3.1.2
+#11 100.3  + colorlog==6.10.1
+#11 100.3  + contourpy==1.3.2
+#11 100.3  + cron-descriptor==2.0.6
+#11 100.3  + croniter==6.0.0
+#11 100.3  + cryptography==46.0.4
+#11 100.3  + cycler==0.12.1
+#11 100.3  + databricks-cli==0.18.0
+#11 100.3  + deprecated==1.3.1
+#11 100.3  + dill==0.4.1
+#11 100.3  + dnspython==2.8.0
+#11 100.3  + docker==7.1.0
+#11 100.3  + email-validator==2.3.0
+#11 100.3  + entrypoints==0.4
+#11 100.3  + exceptiongroup==1.3.1
+#11 100.3  + fastapi==0.128.1
+#11 100.3  + fastapi-cli==0.0.20
+#11 100.3  + fastapi-cloud-cli==0.11.0
+#11 100.3  + fastar==0.8.0
+#11 100.3  + flask==3.1.2
+#11 100.3  + fonttools==4.61.1
+#11 100.3  + fsspec==2026.1.0
+#11 100.3  + gitdb==4.0.12
+#11 100.3  + gitpython==3.1.46
+#11 100.3  + googleapis-common-protos==1.72.0
+#11 100.3  + greenlet==3.3.1
+#11 100.3  + grpcio==1.76.0
+#11 100.3  + gunicorn==21.2.0
+#11 100.3  + h11==0.16.0
+#11 100.3  + httpcore==1.0.9
+#11 100.3  + httptools==0.7.1
+#11 100.3  + httpx==0.28.1
+#11 100.3  + idna==3.11
+#11 100.3  + importlib-metadata==7.2.1
+#11 100.3  + itsdangerous==2.2.0
+#11 100.3  + jinja2==3.1.6
+#11 100.3  + joblib==1.3.2
+#11 100.3  + jsonschema==4.26.0
+#11 100.3  + jsonschema-specifications==2025.9.1
+#11 100.3  + kiwisolver==1.4.9
+#11 100.3  + lazy-object-proxy==1.12.0
+#11 100.3  + libcst==1.8.6
+#11 100.3  + linkify-it-py==2.0.3
+#11 100.3  + lockfile==0.12.2
+#11 100.3  + mako==1.3.10
+#11 100.3  + markdown==3.10.1
+#11 100.3  + markdown-it-py==4.0.0
+#11 100.3  + markupsafe==3.0.3
+#11 100.3  + matplotlib==3.10.8
+#11 100.3  + mdurl==0.1.2
+#11 100.3  + methodtools==0.4.7
+#11 100.3  + mlflow==2.10.0
+#11 100.3  + more-itertools==10.8.0
+#11 100.3  + msgspec==0.20.0
+#11 100.3  + numpy==1.26.2
+#11 100.3  + oauthlib==3.3.1
+#11 100.3  + opentelemetry-api==1.27.0
+#11 100.3  + opentelemetry-exporter-otlp==1.27.0
+#11 100.3  + opentelemetry-exporter-otlp-proto-common==1.27.0
+#11 100.3  + opentelemetry-exporter-otlp-proto-grpc==1.27.0
+#11 100.3  + opentelemetry-exporter-otlp-proto-http==1.27.0
+#11 100.3  + opentelemetry-proto==1.27.0
+#11 100.3  + opentelemetry-sdk==1.27.0
+#11 100.3  + opentelemetry-semantic-conventions==0.48b0
+#11 100.3  + packaging==23.2
+#11 100.3  + pandas==2.1.4
+#11 100.3  + pathlib-abc==0.5.2
+#11 100.3  + pathspec==1.0.4
+#11 100.3  + pendulum==3.2.0
+#11 100.3  + pillow==12.1.0
+#11 100.3  + pluggy==1.6.0
+#11 100.3  + protobuf==4.25.8
+#11 100.3  + psutil==7.2.2
+#11 100.3  + psycopg2-binary==2.9.9
+#11 100.3  + pyarrow==15.0.2
+#11 100.3  + pycparser==3.0
+#11 100.3  + pydantic==2.12.5
+#11 100.3  + pydantic-core==2.41.5
+#11 100.3  + pydantic-extra-types==2.11.0
+#11 100.3  + pydantic-settings==2.12.0
+#11 100.3  + pygments==2.19.2
+#11 100.3  + pyjwt==2.11.0
+#11 100.3  + pyparsing==3.3.2
+#11 100.3  + python-daemon==3.1.2
+#11 100.3  + python-dateutil==2.9.0.post0
+#11 100.3  + python-dotenv==1.2.1
+#11 100.3  + python-multipart==0.0.22
+#11 100.3  + python-slugify==8.0.4
+#11 100.3  + pytz==2023.4
+#11 100.3  + pyyaml==6.0.3
+#11 100.3  + querystring-parser==1.2.4
+#11 100.3  + referencing==0.37.0
+#11 100.3  + requests==2.31.0
+#11 100.3  + retryhttp==1.4.0
+#11 100.3  + rich==14.3.2
+#11 100.3  + rich-argparse==1.7.2
+#11 100.3  + rich-toolkit==0.18.1
+#11 100.3  + rignore==0.7.6
+#11 100.3  + rpds-py==0.30.0
+#11 100.3  + scikit-learn==1.3.2
+#11 100.3  + scipy==1.15.3
+#11 100.3  + sentry-sdk==2.52.0
+#11 100.3  + setproctitle==1.3.7
+#11 100.3  + shellingham==1.5.4
+#11 100.3  + six==1.17.0
+#11 100.3  + smmap==5.0.2
+#11 100.3  + sqlalchemy==1.4.54
+#11 100.3  + sqlalchemy-jsonfield==1.0.2
+#11 100.3  + sqlalchemy-utils==0.42.1
+#11 100.3  + sqlparse==0.5.5
+#11 100.3  + starlette==0.50.0
+#11 100.3  + structlog==25.5.0
+#11 100.3  + svcs==25.1.0
+#11 100.3  + tabulate==0.9.0
+#11 100.3  + tenacity==9.1.2
+#11 100.3  + termcolor==3.3.0
+#11 100.3  + text-unidecode==1.3
+#11 100.3  + threadpoolctl==3.6.0
+#11 100.3  + tomli==2.4.0
+#11 100.3  + typer==0.21.1
+#11 100.3  + typing-extensions==4.15.0
+#11 100.3  + typing-inspection==0.4.2
+#11 100.3  + tzdata==2025.3
+#11 100.3  + uc-micro-py==1.0.3
+#11 100.3  + universal-pathlib==0.3.9
+#11 100.3  + urllib3==2.6.3
+#11 100.3  + uuid6==2025.0.1
+#11 100.3  + uvicorn==0.40.0
+#11 100.3  + uvloop==0.22.1
+#11 100.3  + watchfiles==1.1.1
+#11 100.3  + websockets==16.0
+#11 100.3  + werkzeug==3.1.5
+#11 100.3  + wirerope==1.0.0
+#11 100.3  + wrapt==2.1.1
+#11 100.3  + zipp==3.23.0
+#11 DONE 8.4s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 116.9s done
+#12 exporting manifest sha256:59bc0bd63193991a4dcf7bc6ec74e6369b6ddc507803a1c92da57edaee74b6b7 0.0s done
+#12 exporting config sha256:6efa10db0518606659675d2e98517a7b0ad532d3acda9e661cce1304b281e580 0.0s done
+#12 exporting attestation manifest sha256:f25acaf257165da527d09648063b874a1bfc87b31c1bac758f8e3f1d3e53dfc9 done
+#12 exporting manifest list sha256:b252d91adaca32bde630ea5dd08bb5377e38cd8422c75bc855566e2d26c79893
+#12 exporting manifest list sha256:b252d91adaca32bde630ea5dd08bb5377e38cd8422c75bc855566e2d26c79893 0.0s done
+#12 naming to docker.io/library/proyecto_01-airflow-scheduler:latest done
+#12 unpacking to docker.io/library/proyecto_01-airflow-scheduler:latest
+#12 unpacking to docker.io/library/proyecto_01-airflow-scheduler:latest 3.1s done
+#12 DONE 27.8s
+
+#13 resolving provenance for metadata file
+#13 DONE 0.0s
+ Image proyecto_01-airflow-scheduler Built 
