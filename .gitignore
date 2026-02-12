@@ -8,3 +8,24 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Data (DVC versionado)
+pipeline/data/raw/*
+pipeline/data/processed/*
+pipeline/data/labeled/*
+!pipeline/data/*/.gitkeep
+
+# MLOps generados
+mlops-stack/airflow/logs/*
+mlops-stack/minio/*
+!mlops-stack/airflow/logs/.gitkeep
+
+# Environment
+.env.local
+*.env.local
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
