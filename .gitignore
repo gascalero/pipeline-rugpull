@@ -14,6 +14,7 @@ pipeline/data/raw/*
 pipeline/data/processed/*
 pipeline/data/labeled/*
 !pipeline/data/*/.gitkeep
+mlops-stack/airflow/plugins/data/
 
 # MLOps generados
 mlops-stack/airflow/logs/*
