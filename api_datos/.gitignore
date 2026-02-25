@@ -1,0 +1,8 @@
+data/
+.venv/
+state/
+.api.pid
+api.log
+.env
+__pycache__/
+*.pyc

@@ -1,0 +1,5 @@
+# ── Datos locales 
+DATA_DIR=data
+
+# ── Batches 
+NUM_BATCHES=12
